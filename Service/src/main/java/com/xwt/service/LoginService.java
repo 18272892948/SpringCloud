@@ -3,7 +3,7 @@ package com.xwt.service;
 import com.xwt.vo.ResultVo;
 import org.springframework.stereotype.Service;
 
-@Service
+
 public interface LoginService {
 
     //登录

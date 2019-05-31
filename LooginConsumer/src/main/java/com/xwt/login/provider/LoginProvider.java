@@ -70,15 +70,14 @@ public class LoginProvider {
                 }
             }
         }
-
         if (token.length() > 0) {
             //删除Redis
             //删除Cookie
             /*loginService.exit(token);*/
             restTemplate.getForObject("http://loginprovider/login/exit.do?token=" + token+"&ip="+ipAddr, ResultVo.class);
-            Cookie cookie = new Cookie(SystemConst.COOKIETOKEN, "");
+          /*  Cookie cookie = new Cookie(SystemConst.COOKIETOKEN, "");
             cookie.setMaxAge(0);
-            response.addCookie(cookie);
+            response.addCookie(cookie);*/
         }
         return ResultUtil.exec(true, "OK", null);
     }

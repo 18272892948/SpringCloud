@@ -79,4 +79,13 @@
       status = #{status,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+  <select id="selectByUsername" resultMap="BaseResultMap">
+
+    select
+    <include refid="Base_Column_List" />
+    from db_user
+    where username = #{username}
+
+  </select>
 </mapper>

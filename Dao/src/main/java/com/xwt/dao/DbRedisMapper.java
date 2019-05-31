@@ -16,7 +16,7 @@ public interface DbRedisMapper {
     int updateByPrimaryKey(DbRedis record);
 
     DbRedis selectByToken(String token);
-
+    int  deleteByToken(String token);
 
 
 }
