@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Common" />
+        <module name="Dao" />
+        <module name="Entity" />
+        <module name="Eureka" />
+        <module name="LoginProducer" />
+        <module name="LooginConsumer" />
+        <module name="Service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="LoginConsumer" target="1.8" />
+      <module name="Producer" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Common" options="-parameters" />
+      <module name="Dao" options="-parameters" />
+      <module name="Entity" options="-parameters" />
+      <module name="Eureka" options="-parameters" />
+      <module name="LoginConsumer" options="-parameters" />
+      <module name="LoginProducer" options="-parameters" />
+      <module name="LooginConsumer" options="-parameters" />
+      <module name="Service" options="-parameters" />
+    </option>
+  </component>
+</project>

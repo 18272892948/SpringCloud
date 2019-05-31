@@ -1,0 +1,14 @@
+#设置端口号
+server:
+  port: 8888
+#注册中心设置
+eureka:
+  instance:
+    hostname: localhost #主机名称
+    preferIpAddress: false #标记是否使用IP
+
+  client:
+    registerWithEureka: false  #当前项目不注册服务
+    fetchRegistry: false        #是否要发现服务
+    serviceUrl:   #设置注册中心的路径
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

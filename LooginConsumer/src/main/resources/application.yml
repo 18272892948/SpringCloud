@@ -1,0 +1,12 @@
+#spring.cloud.zookeeper.config.enable=true;
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
+server:
+  port: 9091
+spring:
+  application:
+    name: loginweb
+  #注册中心的地址
